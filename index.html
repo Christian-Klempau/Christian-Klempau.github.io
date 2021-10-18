@@ -1,12 +1,65 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Page Title</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/p5@1.1.4/lib/p5.min.js"></script>
+  <script type="text/javascript" src="game.js"></script>
+
+  <style>
+    html {
+        overflow: hidden; 
+    }
+    .center {
+        margin: 0;
+        position: absolute;
+        left: 50%;
+        -ms-transform: translateX(-50%);
+        transform: translateX(-50%);
+      }
+  </style>
+
 </head>
 <body>
+  <div class=columns>
+    <div class="column is-one-third"></div>
+    <div class="column is-one-third">
+      <br>
+      <br>
+      <div class="box" style="opacity: 0.93;">
+        <div>Hola! Soy
+           <b>Christian Klempau</b> 
+            y esta es mi pequeña página :D
+        </div>
+        <div>Lo que ves es un pequeño
+          <a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life">Conway's Simulator!</a>
+          hecho por mi
+        </div>
+        <br>
+        <div class="columns">
+          <div class="column is-one-quarter"></div>
 
-<h1>Holis</h1>
-<p>Zaclam</p>
+          <div class="column is-one-quarter">
+            <button style="margin-left: -20%;" class="button is-danger" type="button" id="btn_pause" onclick="comenzar()">Detener</button>
+          </div>
+
+          <div class="column is-one-quarter">
+            <button class="button is-primary" type="button" id="btn_pause" onclick="reiniciar()">Regenerar</button>
+          </div>
+
+        </div>
+        <div class="center">
+          Nivel de Lag:
+        <input autocomplete="off" type="range" min="3" max="8" value="5" class="slider is-fullwidth is-small is-circle" id="slider" oninput="sliderUpdate()">
+    
+        </div>
+        <br>
+      </div>
+    </div>
+    <div class="column is-one-third"></div>
+  </div>
+  <div id="container"></div>
 
 </body>
 </html> 
+
