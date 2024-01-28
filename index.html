@@ -1,65 +1,35 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/p5@1.1.4/lib/p5.min.js"></script>
-  <script type="text/javascript" src="game.js"></script>
-
-  <style>
-    html {
-        overflow: hidden; 
-    }
-    .center {
-        margin: 0;
-        position: absolute;
-        left: 50%;
-        -ms-transform: translateX(-50%);
-        transform: translateX(-50%);
-      }
-  </style>
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <title>Chris K. Portfolio</title>
 </head>
+
 <body>
-  <div class=columns>
-    <div class="column is-one-third"></div>
-    <div class="column is-one-third">
-      <br>
-      <br>
-      <div class="box" style="opacity: 0.93;">
-        <div>Hola! Soy
-           <b>Christian Klempau</b> 
-            y esta es mi pequeña página :D
-        </div>
-        <div>Lo que ves es un pequeño
-          <a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life">Conway's Simulator!</a>
-          hecho por mi
-        </div>
-        <br>
+
+    <div class="row">
         <div class="columns">
-          <div class="column is-one-quarter"></div>
+            <h1>Christian Klempau</h1>
+            <h2>Check out my projects!</h2>
+            <h3>Click images to go to GitHub Source</h2>
+                <!-- <span>
+                    <h3>Filter out by name / description / technology:</h2>
+                    <input type="text" id="search" placeholder="Filter">
+                </span> -->
 
-          <div class="column is-one-quarter">
-            <button style="margin-left: -20%;" class="button is-danger" type="button" id="btn_pause" onclick="comenzar()">Detener</button>
-          </div>
-
-          <div class="column is-one-quarter">
-            <button class="button is-primary" type="button" id="btn_pause" onclick="reiniciar()">Regenerar</button>
-          </div>
-
+                <svg id="vis"></svg>
+                <br>
+                <br>
         </div>
-        <div class="center">
-          Nivel de Lag:
-        <input autocomplete="off" type="range" min="3" max="8" value="5" class="slider is-fullwidth is-small is-circle" id="slider" oninput="sliderUpdate()">
-    
-        </div>
-        <br>
-      </div>
     </div>
-    <div class="column is-one-third"></div>
-  </div>
-  <div id="container"></div>
+    <p id="tooltip"></p>
 
+    <script src="main.js"></script>
 </body>
-</html> 
 
+</html>

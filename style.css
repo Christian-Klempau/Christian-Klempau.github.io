@@ -1,0 +1,49 @@
+body {
+  margin: 0 auto;
+  /* Puedes cambiar el color de fondo (background-color) si lo deseas */
+  max-width: 1200px;
+  min-width: 500px;
+  text-align: center;
+
+  background-color: #4158D0;
+  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+
+
+
+
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.column {
+  display: block;
+  padding: 10px;
+  margin: 10px;
+  width: 500px;
+}
+
+
+img {
+  border: 1px solid gray;
+}
+
+/* COMPLETAR CON EL CSS ADICIONAL QUE CONSIDERES NECESARIO */
+
+line:hover {
+  stroke: chartreuse;
+}
+
+html {
+  font-family: monospace;
+  font-size: 16px;
+}
+
+.grid line {
+  stroke-width: 1;
+  color: rgb(194, 194, 194);
+  opacity: 0.7;
+}
