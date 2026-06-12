@@ -8,11 +8,11 @@ const projects = [
   { name: "ExcalidrawPro",     url: "https://github.com/Christian-Klempau/excalidraw-extension",       description: "Free Chrome extension alternative to Excalidraw+",                      tech: ["Chrome","JS","HTML","CSS"],                 image: "./images/ExcalidrawPro.png" },
   { name: "Game of Life",      url: "https://github.com/Christian-Klempau/RustGameOfLife",             description: "Conway's Game of Life in Rust, compiled to WebAssembly",                tech: ["Rust","WASM"],                              image: "./images/RustGameOfLife.png" },
   { name: "MaxSAT Fuzz Debug", url: "https://github.com/Christian-Klempau/fuzzer-delta-debugger.git", description: "WCNF MaxSAT automatic fuzzer and delta debugger for any solver",         tech: ["C","SAT","Linux"],                          image: "./images/DeltaDebugger.png" },
-  { name: "Kanban Fullstack",  url: "https://github.com/Christian-Klempau/forms-back",                 description: "Django + React TypeScript fullstack Kanban board",                       tech: ["Python","Django","Ionic","React","TS"],     image: "./images/Kanban.png" },
   { name: "Prime Generator",   url: "https://github.com/Christian-Klempau/prime-generator",            description: "Solovay-Strassen primality test implementation in pure C",               tech: ["C","Math"],                                image: "./images/PrimeGenerator.png" },
-  { name: "Repos Downloader",  url: "https://github.com/Christian-Klempau/repos_downloader",           description: "Utility to batch-download GitHub repo subfolders from a CSV list",      tech: ["Git","Python"] },
-  { name: "Rust TodoList API", url: "https://github.com/Christian-Klempau/rust_actix_psql_api",        description: "Actix + Serde + Postgres REST API for a TodoList",                      tech: ["Rust","Postgres","API"] },
-  { name: "Flask Mongo API",   url: "https://github.com/Christian-Klempau/FlaskMongoAPI",              description: "Simple Python Flask API backed by a MongoDB database",                  tech: ["Flask","Python","MongoDB","API"] },
+  // { name: "Kanban Fullstack",  url: "https://github.com/Christian-Klempau/forms-back",                 description: "Django + React TypeScript fullstack Kanban board",                       tech: ["Python","Django","Ionic","React","TS"],     image: "./images/Kanban.png" },
+  // { name: "Repos Downloader",  url: "https://github.com/Christian-Klempau/repos_downloader",           description: "Utility to batch-download GitHub repo subfolders from a CSV list",      tech: ["Git","Python"] },
+  // { name: "Rust TodoList API", url: "https://github.com/Christian-Klempau/rust_actix_psql_api",        description: "Actix + Serde + Postgres REST API for a TodoList",                      tech: ["Rust","Postgres","API"] },
+  // { name: "Flask Mongo API",   url: "https://github.com/Christian-Klempau/FlaskMongoAPI",              description: "Simple Python Flask API backed by a MongoDB database",                  tech: ["Flask","Python","MongoDB","API"] },
 ];
 
 const TECH_COLORS = {
